@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tht_1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:maxLength="100"
+        android:textColor="@color/black"
+        android:text="@string/app_name"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:fontFamily="serif"
+        />
+
+    <TextView
+        android:id="@+id/tht_2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="serif"
+        android:text="12/12/1212"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/materialDivider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tht_1" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/materialDivider"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="15dp"
+        android:orientation="vertical"
+        app:dividerColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tht_1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tht_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="5dp"
+        android:fontFamily="serif"
+        android:text="sotish"
+        app:layout_constraintEnd_toStartOf="@+id/materialDivider2"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/materialDivider"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tht_4"
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:fontFamily="serif"
+        android:text="0.0"
+        android:maxLines="45"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tht_3"
+        app:layout_constraintEnd_toEndOf="@+id/tht_3"
+        app:layout_constraintStart_toStartOf="@+id/tht_3" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/materialDivider2"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:orientation="vertical"
+        app:dividerColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/tht_3" />
+
+    <TextView
+        android:id="@+id/tht_5"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:layout_marginTop="15dp"
+        android:text="sotib olish"
+        android:layout_marginHorizontal="5dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/materialDivider3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/materialDivider2" />
+
+    <TextView
+        android:id="@+id/tht_6"
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:text="0.0"
+        android:fontFamily="serif"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tht_5"
+        app:layout_constraintEnd_toEndOf="@+id/tht_5"
+        app:layout_constraintStart_toStartOf="@+id/tht_5" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/materialDivider3"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:orientation="vertical"
+        app:dividerColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tht_5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tht_usd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/materialDivider3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.divider.MaterialDivider
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
